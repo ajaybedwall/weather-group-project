@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import useIcon from "../hooks/useIcon";
@@ -18,7 +19,7 @@ export default function WeatherSection({ weatherData }) {
     name: city,
     sys: { country },
     weather: [{ description }],
-    main: { temp: temperature, humidity },
+    main: { temp: temperature, humidity,},
     wind: { speed: wind },
   } = weatherData;
 
@@ -54,6 +55,7 @@ export default function WeatherSection({ weatherData }) {
           <span className="">{city}</span>
         </div>
         <DataList items={items} />
+        
       </div>
     </section>
   );
