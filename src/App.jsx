@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// import "./App.css";
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,7 +8,6 @@ import {
 
 import Login from "./components/login";
 import SignUp from "./components/register";
-// import Profile from "./components/profile";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "./components/firebase";
