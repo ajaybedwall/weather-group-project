@@ -51,7 +51,7 @@ export default function App() {
                 <Route path="/" element={<Login />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<SignUp />} />
-                <Route path="/profile" element={<Navigate to="/login" />} />
+                {/* <Route path="/profile" element={<Navigate to="/login" />} /> */}
               </Routes>
             </div>
           </div>
