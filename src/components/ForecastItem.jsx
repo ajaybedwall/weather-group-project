@@ -33,7 +33,7 @@ export default function ForecastItem({ forecastData }) {
   ];
 
   return (
-    <li className="min-w-32 p-4 flex flex-1 flex-col justify-center items-center border border-white border-opacity-25 rounded-xl bg-white bg-opacity-25 shadow-[0_0_16px_0_rgba(255,255,255,0.25)] backdrop-blur">
+    <li className="min-w-32 w-40 h-60 p-4 flex flex-col justify-center items-center border border-white border-opacity-25 rounded-xl bg-white bg-opacity-25 shadow-[0_0_16px_0_rgba(255,255,255,0.25)] backdrop-blur">
       <span className="w-full flex justify-center items-center">{day}</span>
       <img className="max-w-32 w-full" src={icon} alt="Weather"></img>
       <DataList items={items} />

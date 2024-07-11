@@ -4,6 +4,7 @@ import useWeather from "../hooks/useWeather";
 import useForecast from "../hooks/useForecast";
 import WeatherSection from "./WeatherSection";
 import ForecastList from "./ForecastList";
+import TemperatureGraph from "./TemperatureGraph"; // Import the TemperatureGraph component
 
 export default function Main({ city }) {
   if (!city) {
@@ -36,7 +37,12 @@ export default function Main({ city }) {
         <WeatherSection weatherData={weatherData} />
       )}
       {!forecastLoading && !forecastError && (
-        <ForecastList forecastData={forecastData} />
+        <>
+          <div className="graph w-full  mt-4 border border-white border-opacity-25 rounded-xl bg-white bg-opacity-25 shadow-[0_0_16px_0_rgba(255,255,255,0.25)] backdrop-blur">
+            <TemperatureGraph forecastData={forecastData} /> {/* Add the TemperatureGraph component */}
+          </div>
+          <ForecastList forecastData={forecastData} />
+        </>
       )}
     </main>
   );

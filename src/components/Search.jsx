@@ -54,7 +54,7 @@ export default function Search({ onSearch }) {
           <>
             <button
               onClick={handleLogout}
-              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+              className="bg-sky-400 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded ml-96 -mt-20"
             >
               Logout
             </button>
